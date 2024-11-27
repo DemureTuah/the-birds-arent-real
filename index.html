@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Bird Business</title>
+</head>
+<body id="body" onclick="document.getElementById('background-audio').play()">
+    <img id="red" src="img/bird-red.png">
+    <h1><a href="https://www.amazon.com/YOFIT-Scarecrow-Repellent-Protectors-Deterrent/dp/B01IXTAN74?crid=2JEFFP3QA4XKK&dib=eyJ2IjoiMSJ9.IKixSmy_7kx9zWqZ1ffGe88RlfOjJ7ENVMZW2Ki9xENQPPu2inynYmUIeLsIPPBd7YQkNJepin0XpqMFh8FIfiohn80vQKHpnGQUJxWs9PKC9kdQSd7NpMrtovRcoG_O8DATwy4-nYQFHy6ecL-iGFa1eyoMVWyRUdR2bbeJpiwuirNH3IEsGpxpoOE_laSl66_GZcRmu6LxWpN0WgNgB2WzO86xn9i-49xN-KirruOgzuwUylHa-TATCTOI4f3iXlCeessDWJtCl0k6IAHrAngL801cSnQI0Yg7CW0LPzY.ZmHEm7sTmuDjZNRIxtfV_Q6SPpAUb1ysGWUK-FOTfBs&dib_tag=se&keywords=rubber+hawk&qid=1732665842&sprefix=rubber+hawk%2Caps%2C208&sr=8-3">Bird Business</a></h1>
+    <img id="blue" src="img/bird-blue.png">
+    <script src="code.js"></script>
+    <audio id="background-audio" src="audio/1.ogg" type="audio/ogg" loop autoplay>
+    <script>
+        const audio = document.getElementById('background-audio');
+        audio.play().catch((error) => {
+            console.error('Audio playback failed:', error);
+        });
+    </script>
+</body>
+</html>
